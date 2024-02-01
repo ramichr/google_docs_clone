@@ -16,16 +16,16 @@ The customer shop of felgenoutlet.de specifically built for Austria.
 
 2. Install the bundle `bundle install` and package `yarn install --check-files`
 3. Fetch the keys from the keypass to access encrypted credential files
-4. run `rails g docker_dir_env:install`
+4. Install [Docker Desktop](https://docs.docker.com/desktop/install/ubuntu/) and run `rails g docker_dir_env:install`
 5. Setup your database (It's recommended to use docker. See "Database Creation")
 6. Start your server
-   with `foreman start`. This will start a puma server listening on port ENV['PORT'] and a sidekiq server for file analyzing with active storage.
+   with `bin/dev`. This will start a puma server listening on port ENV['PORT'] and a sidekiq server for file analyzing with active storage.
 
    When using `byebug` to debug make sure to use `rails s` since foreman hinders you from inputing data while running.
 
 ## System dependencies
 
-- Ruby (rvm)
+- Ruby (rbenv)
 - Node.js
 - libmysqlclient-dev
 - python-dev
@@ -50,7 +50,7 @@ The customer shop of felgenoutlet.de specifically built for Austria.
 ## Mailhog setup
 
 1. Make sure having docker installed
-2. ![mailhog install instruction image from doc/readme-images/mailhog-install.png](./doc/readme-images/mailhog-install.png)
+   [mailhog install instruction image from doc/readme-images/mailhog-install.png](./doc/readme-images/mailhog-install.png)
 
 ## Database creation
 
